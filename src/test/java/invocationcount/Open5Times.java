@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class Open5Times extends OpenBrowser {
 	
-	@Test(invocationCount=2, threadPoolSize=2)
+	@Test(invocationCount=2, threadPoolSize=1)
 	public void Login()
 	{
 		driver= getDriver("Chrome");
